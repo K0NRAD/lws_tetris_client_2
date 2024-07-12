@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <dialog data-modal>
+        <div data-modal-content class="modal-content">
+            <div data-close-modal class="close-modal">&#10007;</div>
+            <h2>Your Score!</h2>
+            <h1 data-score-modal>0</h1>
+        </div>
+    </dialog>
+
+    <canvas id="background-canvas"></canvas>
+    <div id="game-container">
+        <div class="glass-panel-container">
+            <div class="glass-panel">
+                <canvas id="tetrisCanvas"></canvas>
+            </div>
+            <div class="glass-panel">
+                <div id="score">Score: 0</div>
+                <canvas id="next-piece-canvas" width="120" height="120"></canvas>
+                <button name="start-game" class="start-game">start</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
